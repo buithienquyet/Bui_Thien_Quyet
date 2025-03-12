@@ -8,7 +8,7 @@ dist/
 .env
 
 # SQLite database
-src/db/database.sqlite
+src/database/database.sqlite
 
 # IDE files
 .vscode/

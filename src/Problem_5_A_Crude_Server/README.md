@@ -30,12 +30,12 @@ http://localhost:3000/api-docs
 ```
 src/
 ├── controllers/      # API request handlers
-│   └── taskController.ts
+│   └── tasksController.ts
 ├── database/         # Database configuration and models
 ├── routes/           # API route definitions
-│   └── taskRoutes.ts
+│   └── tasksRoutes.ts
 ├── services/         # Business logic
-│   └── taskService.ts
+│   └── tasksService.ts
 ├── models           # Models for API requests/responses
 ├── app.ts           # Express application setup
 ├── inversify.config.ts  # Dependency injection configuration
@@ -53,7 +53,7 @@ src/
 
 #### Controllers (`/controllers`)
 Contains request handlers that process HTTP requests and responses. 
-The `taskController.ts` manages task-related operations and input validation.
+The `tasksController.ts` manages task-related operations and input validation.
 
 #### Database (`/database`)
 Contains all database-related configurations and models and queries by knex:
@@ -64,11 +64,11 @@ Contains all database-related configurations and models and queries by knex:
 
 #### Routes (`/routes`)
 API endpoint definitions with Swagger documentation. 
-The `taskRoutes.ts` defines all available task endpoints.
+The `tasksRoutes.ts` defines all available task endpoints.
 
 #### Services (`/services`)
 Business logic layer that handles data operations. 
-The `taskService.ts` implements task CRUD operations.
+The `tasksService.ts` implements task CRUD operations.
 
 ### Main Files
 - `index.ts` - HTTP server initialization and port configuration, Express application configuration, middleware setup, and route registration
